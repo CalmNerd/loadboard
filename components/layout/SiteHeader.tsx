@@ -96,7 +96,7 @@ export function SiteHeader({ transparent }: SiteHeaderProps) {
               />
             </div>
             <BrandCta href="/register" className="hidden sm:inline-flex">
-              Contact Us
+              Get Started
             </BrandCta>
           </div>
         </div>
