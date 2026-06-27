@@ -5,26 +5,6 @@ import { toast } from "sonner"
 import { BrandCta } from "@/components/shared/BrandCta"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { PublicLoadBoard } from "@/components/loads/PublicLoadBoard"
-
-export function LoadBoardSection() {
-  return (
-    <section id="loads" className="bg-white py-16 md:py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="mb-10 text-center">
-          <h2 className="section-heading">
-            Browse <strong>Available Loads</strong>
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Search Iraq&apos;s freight marketplace. Filter by route, truck type, cargo,
-            and pickup date — then submit offers as a registered carrier.
-          </p>
-        </div>
-        <PublicLoadBoard />
-      </div>
-    </section>
-  )
-}
 
 export function LoadsConvenienceSection() {
   const [email, setEmail] = useState("")

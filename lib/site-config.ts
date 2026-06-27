@@ -7,7 +7,7 @@ export const siteConfig = {
 }
 
 export const brandNav = [
-  { label: "Load Board", href: "/#loads" },
+  { label: "Load Board", href: "/loads" },
   { label: "Solutions", href: "/#solutions" },
   { label: "Segments", href: "/#segments" },
   { label: "About", href: "/#about" },

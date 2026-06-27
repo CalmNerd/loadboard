@@ -36,7 +36,7 @@ export default function LoadDetailPage({
     <PublicPageLayout title={load.title} subtitle={`${load.pickupCity} → ${load.deliveryCity}`}>
       <div className="mx-auto max-w-7xl px-4 py-8">
         <Button asChild variant="ghost" size="sm" className="mb-6 gap-1 text-brand">
-          <Link href="/#loads">
+          <Link href="/loads">
             <ChevronLeft className="size-4" />
             Back to load board
           </Link>

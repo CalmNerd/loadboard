@@ -77,12 +77,17 @@ export function SiteHeader({ transparent }: SiteHeaderProps) {
               <Link
                 key={item.href}
                 href={item.href}
-                className="flex items-center gap-1 text-sm font-medium text-foreground/80 transition-colors hover:text-brand"
+                className={cn(
+                  "flex items-center gap-1 text-sm font-medium transition-colors hover:text-brand",
+                  pathname === item.href || (item.href === "/loads" && pathname.startsWith("/loads"))
+                    ? "text-brand"
+                    : "text-foreground/80"
+                )}
               >
                 {item.label}
-                {(item.href.includes("#") || item.label === "Support") && (
+                {/* {(item.href.includes("#") || item.label === "Support") && (
                   <ChevronDown className="size-3.5 opacity-50" />
-                )}
+                )} */}
               </Link>
             ))}
           </nav>

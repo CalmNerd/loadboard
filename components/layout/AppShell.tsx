@@ -93,10 +93,7 @@ export function AppShell({ children, role }: AppShellProps) {
               </Link>
             )
           })}
-          <Link
-            href="/"
-            className="mt-2 flex items-center gap-3 rounded-sm px-3 py-2.5 text-sm text-sidebar-foreground/60 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
-          >
+          <Link href="/loads" className="mt-2 flex items-center gap-3 rounded-sm px-3 py-2.5 text-sm text-sidebar-foreground/60 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground">
             <Search className="size-4" />
             Public Load Board
           </Link>

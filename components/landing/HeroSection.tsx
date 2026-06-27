@@ -19,7 +19,7 @@ export function HeroSection() {
             {siteConfig.description} Digitize shipment discovery, carrier matching,
             and subscription-based operational workflows across Iraq.
           </p>
-          <BrandCta href="/#loads" size="lg">
+          <BrandCta href="/loads" size="lg">
             Browse Available Loads
           </BrandCta>
         </div>

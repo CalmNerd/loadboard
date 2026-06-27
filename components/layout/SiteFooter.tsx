@@ -17,7 +17,13 @@ const footerColumns = [
   },
   {
     title: "Discover",
-    links: ["Load Board", "Solutions", "Segments", "Success Stories", "Resource Library"],
+    links: [
+      { label: "Load Board", href: "/loads" },
+      { label: "Solutions", href: "/#solutions" },
+      { label: "Segments", href: "/#segments" },
+      { label: "Success Stories", href: "/#about" },
+      { label: "Resource Library", href: "#" },
+    ],
   },
   {
     title: "Support",
@@ -49,16 +55,20 @@ export function SiteFooter() {
                 {col.title}
               </h4>
               <ul className="space-y-2.5">
-                {col.links.map((link) => (
-                  <li key={link}>
-                    <Link
-                      href="#"
-                      className="text-sm text-white/75 transition-colors hover:text-white"
-                    >
-                      {link}
-                    </Link>
-                  </li>
-                ))}
+                {col.links.map((link) => {
+                  const label = typeof link === "string" ? link : link.label
+                  const href = typeof link === "string" ? "#" : link.href
+                  return (
+                    <li key={label}>
+                      <Link
+                        href={href}
+                        className="text-sm text-white/75 transition-colors hover:text-white"
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           ))}
